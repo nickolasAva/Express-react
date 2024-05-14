@@ -5,7 +5,7 @@ export const postCourseRoute = {
     method: 'post',
     handler: (req, res) => {
 
-        //TODO: Uncomment to add a course to the json file
+
 
          const { title, description, estimatedTime } = req.body;
          const id = Math.floor(process.uptime());
