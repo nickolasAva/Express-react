@@ -1,4 +1,4 @@
-//TODO: Uncomment imports to include routes
+
 
  import { getCoursesRoute } from './getCourses';
  import { getCourseRoute } from './getCourseRoute';
@@ -11,7 +11,6 @@ import { testRoute } from './testRoute';
 export const routes = [
     testRoute,
 
-    //TODO: Uncomment the routes below to use them
 
      getCoursesRoute,
      getCourseRoute,
