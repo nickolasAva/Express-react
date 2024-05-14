@@ -7,7 +7,7 @@ export const deleteCourseRoute = {
     path: '/api/course/:id',
     method: 'delete',
     handler: (req, res) => {
-        //TODO: Uncomment to use DELETE to delete a course
+
              const id = req.params.id;
              const course = courseData.find((course) => course.id === parseInt(id));
 
