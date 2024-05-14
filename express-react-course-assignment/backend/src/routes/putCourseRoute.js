@@ -1,6 +1,4 @@
-//delete a course
 
-// Compare this snippet from backend/src/routes/deleteCourseRoute.js:
 import { courseData } from "../courseData";
 
 export const putCourseRoute = {
@@ -8,7 +6,7 @@ export const putCourseRoute = {
     method: 'put',
     handler: (req, res) => {
 
-        //TODO: Uncomment to use PUT to update a course
+  
 
              const id = req.params.id;
              const course = courseData.find((course) => course.id === parseInt(id));
