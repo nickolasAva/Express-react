@@ -15,7 +15,7 @@ const CourseDetails = () => {
 
     const handleDelete = (event) => {
         event.preventDefault();
-        //TODO: Uncomment to delete the course from the REST API
+  
          fetch(`${process.env.REACT_APP_API_URL}/api/course/${id}`, {
              method: 'DELETE',
              headers: {
@@ -29,7 +29,7 @@ const CourseDetails = () => {
     }
 
 
-    //TODO: Uncomment to fetch the course details from the REST API
+
      useEffect(() => {
 
          fetch(`${process.env.REACT_APP_API_URL}/api/course/${id}`, { method: 'GET' })
