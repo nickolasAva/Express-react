@@ -13,7 +13,7 @@ const CourseAdd = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        //TODO: Uncomment to update the course in the REST API
+      
         
          fetch(`${process.env.REACT_APP_API_URL}/api/course/`, {
              method: 'POST',
