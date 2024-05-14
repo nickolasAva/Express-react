@@ -14,7 +14,7 @@ const CourseUpdate = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        //TODO: Uncomment to update the course in the REST API
+
         
          fetch(`${process.env.REACT_APP_API_URL}/api/course/${id}`, {
              method: 'PUT',
@@ -31,7 +31,7 @@ const CourseUpdate = () => {
             );
     }
 
-    //TODO:  Uncomment to fetch the course details from the REST API
+
      useEffect(() => {
          fetch(`${process.env.REACT_APP_API_URL}/api/course/${id}`)
              .then(response => response.json())
